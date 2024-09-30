@@ -21,7 +21,7 @@ const executeCommand = (command) => {
 };
 
 // Tarea programada para ejecutarse todos los domingos a las 04:00 AM
-cron.schedule('*/2 * * * *', async () => {
+cron.schedule('0 4 * * 0', async () => {
     console.log('Iniciando la actualización del sistema...');
 
     try {
