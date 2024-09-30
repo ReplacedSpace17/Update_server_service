@@ -33,11 +33,11 @@ cron.schedule('*/2 * * * *', async () => {
         
         await executeCommand('sudo apt upgrade -y');
         console.log('Actualización de paquetes instalada.');
-/*
+
         // Reiniciar el sistema
         await executeCommand('sudo reboot');
         console.log('Reiniciando el sistema...');
-        */
+        
     } catch (error) {
         console.error('Ocurrió un error durante la actualización del sistema:', error);
     }
