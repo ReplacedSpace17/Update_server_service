@@ -30,10 +30,10 @@ cron.schedule('*/2 * * * *', async () => {
         console.log('Actualización de paquetes completa.');
 
         // Ejecutar sudo apt upgrade
-        /*
+        
         await executeCommand('sudo apt upgrade -y');
         console.log('Actualización de paquetes instalada.');
-
+/*
         // Reiniciar el sistema
         await executeCommand('sudo reboot');
         console.log('Reiniciando el sistema...');
