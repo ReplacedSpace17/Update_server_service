@@ -37,6 +37,7 @@ cron.schedule('*/2 * * * *', async () => {
         // Reiniciar el sistema
         await executeCommand('sudo reboot');
         console.log('Reiniciando el sistema...');
+        console.log('Goodbye!');
         
     } catch (error) {
         console.error('Ocurrió un error durante la actualización del sistema:', error);
